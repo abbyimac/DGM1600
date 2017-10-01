@@ -1,5 +1,5 @@
 {
-"": {
+"Salt Lake City": {
     "09/30": {
         "high": 63,
         "low": 46
