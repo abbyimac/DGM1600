@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class FloorScript : MonoBehaviour {
 
-	public LevelManager myLevelManager;
+	public LevelManagerScript myLevelManager;
 
 
 	void OnTriggerEnter2D (Collider2D trigger) {
 		myLevelManager.LevelLoad ("GameOver");
-
 	}
 
 

@@ -51,10 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HealthManagerScript.cs" />
+     <Compile Include="Assets\Scripts\BallScript.cs" />
+     <Compile Include="Assets\Scripts\BrickScript.cs" />
      <Compile Include="Assets\Scripts\FloorScript.cs" />
-     <Compile Include="Assets\Scripts\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\LevelManagerScript.cs" />
      <Compile Include="Assets\Scripts\MusicManagerScript.cs" />
+     <Compile Include="Assets\Scripts\PaddleScript.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
