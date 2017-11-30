@@ -16,8 +16,15 @@ public class LaserScript : MonoBehaviour {
 		if (lifetime <= 0) {
 			Destroy (this.gameObject);
 		}
+	}
+
+		void OnTriggerEnter2D(Collider2D other)
+		{
+		//other.GetComponent<Health> ().IncrementHealth(damage);
+		Destroy (gameObject);
+		}
 
 
 		//transform.Translate (Vector3.up * speed * Time.deltaTime);
 	}
-}
+

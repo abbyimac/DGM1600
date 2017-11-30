@@ -53,7 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\FollowScript.cs" />
      <Compile Include="Assets\ParticleAutoDestroy.cs" />
-     <Compile Include="Assets\Scripts\HealthScript.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\LevelManagerScript.cs" />
      <Compile Include="Assets\Scripts\MeteorScript.cs" />

@@ -9,6 +9,8 @@ public class MeteorScript : MonoBehaviour {
 	public Sprite[] picture;
 	private int count = 0;
 	private LevelManagerScript levelManager;
+	private GameObject player;
+	private Rigidbody2D rigid;
 
 	// Use this for initialization
 	void Start () {
@@ -17,29 +19,34 @@ public class MeteorScript : MonoBehaviour {
 
 
 
-	void OnCollisionEnter2D (Collision2D myCollider) {
+	//void OnCollisionEnter2D (Collision2D myCollider) {
 
 		//Take away health
-			health--;
-			count++;
+//			health--;
+//			count++;
 
 			// if health is < 0 destroy brick
-			if (health <= 0) {
+			//if (health <= 0) {
 				//LevelManagerScript.brickCount--;
 				//levelManager.CheckBrickCount ();
-				Destroy (this.gameObject);
-			}
+			//	Destroy (this.gameObject);
+			//}
 
 			//change the picture
 			//GetComponent<SpriteRenderer>().sprite = picture[count];
 
-		}
+//		}
 
 
-	
-	
-	// Update is called once per frame
-	void Update () {
-		
+	//cause damage to player when it collides with meteor?
+	void OnCollisionEnter2D (Collision2D coll) 
+	{
+		coll.GameObject.GetComponent<Health> ().IncrementHealth (-1);
 	}
+
+
+
+	
+	
+
 }
