@@ -98,10 +98,13 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
-'Assets/PlayerControllerScript.cs'
+'Assets/LaserScript.cs'
+'Assets/Scripts/FollowScript.cs'
 'Assets/Scripts/LevelManagerScript.cs'
 'Assets/Scripts/MeteorScript.cs'
 'Assets/Scripts/MusicManagerScript.cs'
+'Assets/Scripts/PlayerControllerScript.cs'
+'Assets/Scripts/ScreenWrapScript.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/UnityScript.dll'

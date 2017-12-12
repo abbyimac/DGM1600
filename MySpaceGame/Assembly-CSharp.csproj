@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\FollowScript.cs" />
+     <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\LevelManagerScript.cs" />
      <Compile Include="Assets\Scripts\MeteorScript.cs" />
      <Compile Include="Assets\Scripts\MusicManagerScript.cs" />
