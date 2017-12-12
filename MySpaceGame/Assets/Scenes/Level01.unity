@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 756926593}
   - component: {fileID: 756926592}
   - component: {fileID: 756926597}
+  - component: {fileID: 756926598}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -403,6 +404,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToFollow: {fileID: 639101694}
   zOffset: -1
+--- !u!114 &756926598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756926591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb8b401098a374601b2343105c6fa835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTime: 5
+  decay: 0.95
+  meteorPrefab: {fileID: 1082089403855482, guid: 7efe224ff5391485296c2a0d6324e805,
+    type: 2}
 --- !u!1 &842378128
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +560,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -955133678
+  randomSeed: -1515532717
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\MusicManagerScript.cs" />
      <Compile Include="Assets\Scripts\PlayerControllerScript.cs" />
      <Compile Include="Assets\Scripts\ScreenWrapScript.cs" />
+     <Compile Include="Assets\Scripts\SpawnControllerScript.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
