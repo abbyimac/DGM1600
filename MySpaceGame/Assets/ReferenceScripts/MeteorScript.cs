@@ -27,6 +27,6 @@ public class MeteorScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//GetComponent<Rigidbody2D> ().AddTorque (Random.Range (-startingSpin, startingSpin), ForceMode2D.Impulse);
+		
 	}
 }

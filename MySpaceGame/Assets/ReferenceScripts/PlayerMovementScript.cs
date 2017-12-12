@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class PlayerMovementScript : MonoBehaviour {
 
+
+	public GameObject laserPrefab;
+	public Transform shotPos;
+	public float shotForce;
+
 	public float maxSpeed = 5f;
 	public float rotSpeed = 180f;
 	float shipBoundaryRadius = 0.5f;
+
 	void Start () {
 		
 	}
@@ -54,6 +60,12 @@ public class PlayerMovementScript : MonoBehaviour {
 		}
 
 		transform.position = pos;
+
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			GameObject shot = Instantiate (laserPrefab, shotPos.position, shotPos.rotation) as GameObject;
+			shot.GetComponent<Rigidbody2D> ().AddForce (shotPos.up * shotForce);
+		}
+
 		
 
 	}

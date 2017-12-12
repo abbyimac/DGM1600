@@ -51,17 +51,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\FollowScript.cs" />
-     <Compile Include="Assets\Scripts\FollowUVScript.cs" />
-     <Compile Include="Assets\Scripts\LaserScript.cs" />
-     <Compile Include="Assets\Scripts\LevelManagerScript.cs" />
-     <Compile Include="Assets\Scripts\MeteorScript.cs" />
-     <Compile Include="Assets\Scripts\MusicManagerScript.cs" />
-     <Compile Include="Assets\Scripts\PlayerControllerScript.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovementScript.cs" />
-     <Compile Include="Assets\Scripts\ScreenWrapScript.cs" />
-     <Compile Include="Assets\Scripts\ScrollUVScript.cs" />
-     <Compile Include="Assets\Scripts\SpawnControllerScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\FollowScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\FollowUVScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\HealthScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\LaserScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\LevelManagerScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\MeteorScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\MusicManagerScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\PlayerControllerScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\PlayerMovementScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\ScoreboardScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\ScreenWrapScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\ScrollUVScript.cs" />
+     <Compile Include="Assets\ReferenceScripts\SpawnControllerScript.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
