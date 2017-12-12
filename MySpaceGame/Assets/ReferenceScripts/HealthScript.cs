@@ -9,13 +9,16 @@ public class HealthScript : MonoBehaviour {
 	public GameObject[] hearts;
 	public Animator animator;
 	public GameObject scoreboard;
+	public GameObject healthContainer;
 	public ScoreboardScript scoreScript;
+	public HealthScript healthScript;
 
 	// Use this for initialization
 	void Start () {
 		if (MePlayer ()) {
 			ShowHearts ();
 			scoreboard = FindObjectOfType<ScoreboardScript> ().gameObject;
+			healthContainer = FindObjectOfType<HealthScript> ().gameObject;
 			print (scoreboard);
 		}
 	}
@@ -35,13 +38,12 @@ public class HealthScript : MonoBehaviour {
 			Instantiate (explosionEffect, transform.position, Quaternion.identity);
 			if (!MePlayer ()) {
 				IncrementScore ();
-			}
-			if (MePlayer ()) {
 				//gameObject.GetComponent<PlayerMovementScript> ().levelManager.GetComponent<LevelManagerScript>;
 			}
 		}
-		if (MePlayer ())
+		if (MePlayer ()) {
 			ShowHearts ();
+		}
 	}
 
 	private void ShowHearts () {

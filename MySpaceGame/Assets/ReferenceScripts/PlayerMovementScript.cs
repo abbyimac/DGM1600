@@ -8,10 +8,11 @@ public class PlayerMovementScript : MonoBehaviour {
 	public GameObject laserPrefab;
 	public Transform shotPos;
 	public float shotForce;
-
+	public ParticleSystem particles;
 	public float maxSpeed = 5f;
 	public float rotSpeed = 180f;
 	float shipBoundaryRadius = 0.5f;
+	public HealthScript healthScript;
 
 	void Start () {
 		
@@ -71,8 +72,11 @@ public class PlayerMovementScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D (Collision2D collision) {
+		GetComponent<HealthScript> ().IncrementHealth (1);
+
 		if (collision.gameObject.CompareTag ("Asteroid")) {
 			Destroy (gameObject);
+
 		}
 	
 	}
