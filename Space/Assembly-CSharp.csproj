@@ -51,13 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\FollowScript.cs" />
-     <Compile Include="Assets\ParticleAutoDestroy.cs" />
+     <Compile Include="Assets\Scripts\FollowScript.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\LevelManagerScript.cs" />
      <Compile Include="Assets\Scripts\MeteorScript.cs" />
      <Compile Include="Assets\Scripts\MusicManagerScript.cs" />
+     <Compile Include="Assets\Scripts\ParticleAutoDestroy.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PowerUpScript.cs" />
      <Compile Include="Assets\Scripts\Scoreboard.cs" />
