@@ -23,7 +23,8 @@ GameObject:
   - component: {fileID: 50877188215248828}
   - component: {fileID: 60597780066855780}
   - component: {fileID: 114752140075688764}
-  m_Layer: 0
+  - component: {fileID: 114940355586864774}
+  m_Layer: 8
   m_Name: Meteor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +106,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a1a51ee69814cadaedaf546c9237c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  picture: []
+  health: 0
+  startingSpin: 1
+--- !u!114 &114940355586864774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082089403855482}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7365f747e79408c9da4adff53beea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212971823236551732
 SpriteRenderer:
   m_ObjectHideFlags: 1

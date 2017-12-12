@@ -105,6 +105,7 @@
 'Assets/Scripts/MusicManagerScript.cs'
 'Assets/Scripts/PlayerControllerScript.cs'
 'Assets/Scripts/ScreenWrapScript.cs'
+'Assets/Scripts/SpawnControllerScript.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/UnityScript.dll'

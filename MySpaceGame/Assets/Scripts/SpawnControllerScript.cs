@@ -18,9 +18,12 @@ public class SpawnControllerScript : MonoBehaviour {
 		else {
 			nextSpawn = nextSpawn + spawnTime;
 			spawnTime = spawnTime * decay;
-			Instantiate (meteorPrefab);
+			Quaternion angle = Quaternion.Euler (0, 0, Random.Range (0f, 360f));
+			GameObject meteor = Instantiate (meteorPrefab, new Vector3 (0, 20, 0), angle) as GameObject;
+			meteor.transform.RotateAround (Vector3.zero, Vector3.forward, Random.Range (0f, 360f));
+
 		}
 
-		
+
 	}
 }
