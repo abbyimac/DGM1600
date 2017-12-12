@@ -40,7 +40,7 @@ public class LevelManagerScript : MonoBehaviour {
 
 	}
 		
-	public void CheckBrickCount () {
+	public void CheckMeteorCount () {
 		if (meteorCount <= 0) {
 			LoadNextLevel ();
 		}
