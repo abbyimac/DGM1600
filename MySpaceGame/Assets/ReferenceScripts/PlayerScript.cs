@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovementScript : MonoBehaviour {
+public class PlayerScript : MonoBehaviour {
 
 
 	public GameObject laserPrefab;
@@ -17,7 +17,6 @@ public class PlayerMovementScript : MonoBehaviour {
 	void Start () {
 		
 	}
-	
 
 	void Update () {
 
@@ -27,8 +26,6 @@ public class PlayerMovementScript : MonoBehaviour {
 		z -= Input.GetAxis ("Horizontal") * rotSpeed * Time.deltaTime;
 		rot = Quaternion.Euler (0, 0, z);
 		transform.rotation = rot;
-
-
 
 		//move
 
@@ -46,9 +43,7 @@ public class PlayerMovementScript : MonoBehaviour {
 		if (pos.y - shipBoundaryRadius < -Camera.main.orthographicSize) {
 			pos.y = -Camera.main.orthographicSize + shipBoundaryRadius;
 		}
-
-
-
+			
 		float screenRatio = (float) Screen.width / (float) Screen.height;
 		float widthOrtho = Camera.main.orthographicSize * screenRatio;
 
@@ -66,18 +61,13 @@ public class PlayerMovementScript : MonoBehaviour {
 			GameObject shot = Instantiate (laserPrefab, shotPos.position, shotPos.rotation) as GameObject;
 			shot.GetComponent<Rigidbody2D> ().AddForce (shotPos.up * shotForce);
 		}
-
-		
-
+			
 	}
 
 	void OnCollisionEnter2D (Collision2D collision) {
-		GetComponent<HealthScript> ().IncrementHealth (1);
-
+		FindObjectOfType<HealthScript>().DecrementHealth();
 		if (collision.gameObject.CompareTag ("Asteroid")) {
-			Destroy (gameObject);
-
+			Destroy (collision.gameObject);
 		}
-	
 	}
 }

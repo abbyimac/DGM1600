@@ -5,40 +5,30 @@ using UnityEngine;
 public class HealthScript : MonoBehaviour {
 
 	public int health;
-	public GameObject explosionEffect;
 	public GameObject[] hearts;
 	public Animator animator;
 	public GameObject scoreboard;
-	public GameObject healthContainer;
-	public ScoreboardScript scoreScript;
-	public HealthScript healthScript;
 
 	// Use this for initialization
 	void Start () {
 		if (MePlayer ()) {
 			ShowHearts ();
-			scoreboard = FindObjectOfType<ScoreboardScript> ().gameObject;
-			healthContainer = FindObjectOfType<HealthScript> ().gameObject;
-			print (scoreboard);
 		}
 	}
 
 	private bool MePlayer(){
-		if (GetComponent<PlayerMovementScript> ()) {
+		if (GetComponent<PlayerScript> ()) {
 			return true;
 		} else {
 			return false;
 		}
 	}
 
-	public void IncrementHealth (int value) {
-		health += value;
+	public void IncrementHealth () {
+		health++;
 		if (health <= 0) {
-			Destroy (gameObject);
-			Instantiate (explosionEffect, transform.position, Quaternion.identity);
 			if (!MePlayer ()) {
-				IncrementScore ();
-				//gameObject.GetComponent<PlayerMovementScript> ().levelManager.GetComponent<LevelManagerScript>;
+				scoreboard.GetComponent<ScoreboardScript> ().IncrementScore (10);
 			}
 		}
 		if (MePlayer ()) {
@@ -46,20 +36,19 @@ public class HealthScript : MonoBehaviour {
 		}
 	}
 
-	private void ShowHearts () {
-	//Turn all hearts off
-		for (int i = 0; i < hearts.Length; i++) {
-			hearts [i].SetActive (false);
+	public void DecrementHealth () {
+		health--;
+		hearts[health].SetActive(false);
+		if (health <= 0) {
+			// game over
+			FindObjectOfType<ScoreboardScript>().SaveScore();
+			FindObjectOfType<LevelManagerScript> ().LoadNextLevel();
 		}
-	//Turn hearts on by health
+	}
+
+	private void ShowHearts () {
 		for (int i = 0; i > health; i++) {
 			hearts [i].SetActive (true);
 		}
 	}
-
-	public void IncrementScore(){
-		scoreboard.GetComponent<ScoreboardScript> ().IncrementScoreboard (10);
-	}
-
-
 }

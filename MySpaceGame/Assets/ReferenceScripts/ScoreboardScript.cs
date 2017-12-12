@@ -5,41 +5,44 @@ using UnityEngine.UI;
 
 public class ScoreboardScript : MonoBehaviour {
 
-	public int score;
+	private int highScore;
+	private int score;
 	public Text display;
-	public Text highscoreDisplay;
+	public Text highScoreDisplay;
 	public Text prevScoreDisplay;
 
 
-	// Use this for initialization
 	void Start () {
 		score = 0;
 		if (display != null) {
 			display.text = score.ToString ();
 		}
-		if (highscoreDisplay != null)
-			highscoreDisplay.text = GetScore ().ToString();
-		if (prevScoreDisplay != null)
-			prevScoreDisplay.text = PlayerPrefs.GetInt ("PrevScore").ToString();
+		if (highScoreDisplay != null) {
+			highScoreDisplay.text = GetHighScore().ToString ();
+		}
+		if (prevScoreDisplay != null) {
+			prevScoreDisplay.text = GetPrevScore().ToString ();
+		}
 	}
 	
-	public void IncrementScoreboard (int value) {
+	public void IncrementScore (int value) {
 		score += value;
 		display.text = score.ToString ();
 	}
 
 	public void SaveScore (){
-		//Check previous score
-		int oldScore = GetScore();
-		PlayerPrefs.SetInt ("PrevScore", oldScore);
-
-		//if new score is higher than previous score
-		if (score > oldScore)
+		PlayerPrefs.SetInt ("PrevScore", score);
+		int highScore = GetHighScore ();
+		if (score > highScore) {
 			PlayerPrefs.SetInt ("HighScore", score);
-		
+		}
 	}
 
-	public int GetScore(){
+	public int GetPrevScore(){
+		return PlayerPrefs.GetInt ("PrevScore");
+	}
+
+	public int GetHighScore(){
 		return PlayerPrefs.GetInt ("HighScore");
 	}
 
@@ -47,11 +50,6 @@ public class ScoreboardScript : MonoBehaviour {
 		SaveScore ();
 	}
 
-
-		
-	
-	
-	// Update is called once per frame
 	void Update () {
 		
 	}

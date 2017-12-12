@@ -6,9 +6,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.20506</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
     <ProjectGuid>{284E9FA9-F801-28F8-B1CA-AEE6A07B8383}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -39,53 +38,52 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.XML" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\Managed\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ReferenceScripts\AsteroidScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\FollowScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\FollowUVScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\HealthScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\LaserScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\LevelManagerScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\MeteorScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\MusicManagerScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\PlayerControllerScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\PlayerMovementScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\ScoreboardScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\ScreenWrapScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\ScrollUVScript.cs" />
-     <Compile Include="Assets\ReferenceScripts\SpawnControllerScript.cs" />
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="nunit.framework">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Timeline">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\ReferenceScripts\AsteroidScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\FollowScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\FollowUVScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\HealthScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\LaserScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\LevelManagerScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\MusicManagerScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\PlayerControllerScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\PlayerScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\ScoreboardScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\ScreenWrapScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\ScrollUVScript.cs" />
+    <Compile Include="Assets\ReferenceScripts\SpawnControllerScript.cs" />
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\UnityAnalytics\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\TestRunner\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\TestRunner\net35\unity-custom\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\Networking\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\Timeline\RuntimeEditor\UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\UnityHoloLens\RuntimeEditor\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -95,5 +93,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

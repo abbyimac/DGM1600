@@ -12,12 +12,12 @@ public class LaserScript : MonoBehaviour {
 	void Start () {
 		rigid = GetComponent<Rigidbody2D>();
 		rigid.velocity = transform.up * speed;
-		
 	}
 
 	void Update () {
 		lifetime -= Time.deltaTime;
 		if (lifetime <= 0) {
+			
 			Destroy (this.gameObject);
 		}
 
