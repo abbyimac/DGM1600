@@ -28,12 +28,13 @@ public class PlayerControllerScript : MonoBehaviour {
 
 
 	void Update () {
-			if (Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetKeyDown (KeyCode.Space)) {
 			GameObject shot = Instantiate (laserPrefab, shotPos.position, shotPos.rotation) as GameObject;
 			shot.GetComponent<Rigidbody2D> ().AddForce (shotPos.up * shotForce);
-			}
 		}
+
+
 	
 	
-	
+	}
 }
