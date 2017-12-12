@@ -4,30 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelManagerScript : MonoBehaviour {
-
-
-	public static int meteorCount;
-
-
-
-
 	void Start () {
-		meteorCount = FindObjectsOfType<MeteorScript> ().Length;
-		print (meteorCount);
 	}
 
 	public void LevelLoad (string name) {
 		SceneManager.LoadScene (name);
-	
-	
 	}
 
-
-
-
-
 	public void ExitGame () {
-
 		print ("Tried to Exit.");
 		Application.Quit ();
 	
@@ -35,15 +19,5 @@ public class LevelManagerScript : MonoBehaviour {
 
 	public void LoadNextLevel () {
 		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
-
-
-
 	}
-		
-	public void CheckMeteorCount () {
-		if (meteorCount <= 0) {
-			LoadNextLevel ();
-		}
-	}
-
 }

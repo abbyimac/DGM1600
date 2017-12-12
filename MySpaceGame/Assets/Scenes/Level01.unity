@@ -806,7 +806,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1563812033
+  randomSeed: -1497700410
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4059,7 +4059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   display: {fileID: 599361375}
-  highScoreDisplay: {fileID: 0}
+  highScoreDisplay: {fileID: 20625895}
   prevScoreDisplay: {fileID: 0}
 --- !u!1 &1032482043
 GameObject:

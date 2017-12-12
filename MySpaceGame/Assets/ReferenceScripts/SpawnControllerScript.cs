@@ -29,5 +29,6 @@ public class SpawnControllerScript : MonoBehaviour {
 	}
 
 	public void CreateExplosion(){
+		
 	}
 }
