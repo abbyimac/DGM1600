@@ -8,6 +8,10 @@ public class PlayerControllerScript : MonoBehaviour {
 	public float thrust = 3f; 
 	public float rotationPower = 3f;
 	public GameObject laserPrefab;
+	public Transform shotPos;
+	public float shotForce;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -24,12 +28,12 @@ public class PlayerControllerScript : MonoBehaviour {
 
 
 	void Update () {
-		if (Input.GetKey (KeyCode.Space)) {
-			Instantiate(laserPrefab);
+			if (Input.GetKeyDown (KeyCode.Space)) {
+			GameObject shot = Instantiate (laserPrefab, shotPos.position, shotPos.rotation) as GameObject;
+			shot.GetComponent<Rigidbody2D> ().AddForce (shotPos.up * shotForce);
+			}
 		}
-
 	
 	
 	
-	}
 }
