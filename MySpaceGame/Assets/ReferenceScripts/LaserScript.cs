@@ -23,8 +23,8 @@ public class LaserScript : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		Destroy (gameObject);
-	}
+	//void OnTriggerEnter2D(Collider2D other)
+	//{
+		//Destroy (gameObject);
+	//}
 }

@@ -22,11 +22,12 @@ GameObject:
   - component: {fileID: 212971823236551732}
   - component: {fileID: 50877188215248828}
   - component: {fileID: 60597780066855780}
+  - component: {fileID: 114138175298462016}
   - component: {fileID: 114752140075688764}
   - component: {fileID: 114940355586864774}
   m_Layer: 8
-  m_Name: Meteor1
-  m_TagString: Untagged
+  m_Name: Asteroid
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54,10 +55,10 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 1
-  m_LinearDrag: 5
-  m_AngularDrag: 0
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -85,7 +86,7 @@ PolygonCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   m_Points:
     m_Paths:
     - - {x: 0.51029444, y: 0.0076426156}
@@ -95,6 +96,18 @@ PolygonCollider2D:
       - {x: -0.22059417, y: -0.43588403}
       - {x: 0.114999995, y: -0.32}
       - {x: 0.34907627, y: -0.33483398}
+--- !u!114 &114138175298462016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082089403855482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c82f5d38fda44228efd62edce3745a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!114 &114752140075688764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,7 +128,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1082089403855482}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd7365f747e79408c9da4adff53beea4, type: 3}
   m_Name: 
@@ -152,7 +165,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ef73c96d52d444c3fb1cd1c9441e9df5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9a16dab1f2e7b46f49bc0801480fd1ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
