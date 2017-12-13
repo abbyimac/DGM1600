@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreboardScript : MonoBehaviour {
+/*public class ScoreboardScript : MonoBehaviour {
 
-
+/*
 	public int score;
-	public Text display;
-	public Text highscoreDisplay;
-	public Text prevScoreDisplay;
+//	public Text display;
+//	public Text highscoreDisplay;
+//	public Text prevScoreDisplay;
 
 
 	// Use this for initialization
@@ -19,7 +19,7 @@ public class ScoreboardScript : MonoBehaviour {
 		}
 		if (highscoreDisplay != null)
 			highscoreDisplay.text = GetScore ().ToString();
-		if (prevScoreDisplay.text = PlayerPrefs.GetInt ("PrevScore").ToString();
+//		if (prevScoreDisplay.text = PlayerPrefs.GetInt ("PrevScore").ToString();
 
 	}
 
@@ -55,3 +55,4 @@ public class ScoreboardScript : MonoBehaviour {
 		
 	}
 }
+*/

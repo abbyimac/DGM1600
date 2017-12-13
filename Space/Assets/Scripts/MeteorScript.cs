@@ -7,7 +7,7 @@ public class MeteorScript : MonoBehaviour {
 	public float startingSpin;
 	public int health;
 	public Sprite[] picture;
-	private int count = 0;
+//	private int count = 0;
 	private LevelManagerScript levelManager;
 	private GameObject player;
 	private Rigidbody2D rigid;
@@ -41,7 +41,7 @@ public class MeteorScript : MonoBehaviour {
 	//cause damage to player when it collides with meteor?
 	void OnCollisionEnter2D (Collision2D coll) 
 	{
-		coll.GameObject.GetComponent<Health> ().IncrementHealth (-1);
+		//coll.GameObject.GetComponent<Health> ().IncrementHealth (-1);
 	}
 
 

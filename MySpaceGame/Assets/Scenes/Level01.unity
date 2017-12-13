@@ -597,6 +597,12 @@ MonoBehaviour:
     type: 2}
   playerPrefab: {fileID: 1678668370429098, guid: 663e10fe469ab4b88b5195a881ffb9e8,
     type: 2}
+  laserPowerUpPrefab: {fileID: 1474188092036808, guid: d25887da3fb584b3d816be63d269f567,
+    type: 2}
+  shieldPowerUpPrefab: {fileID: 1657017264451070, guid: 175a2d707f71a4662a5af8b0a54d21f8,
+    type: 2}
+  speedPowerUpPrefab: {fileID: 1199385979973844, guid: f12c503eb517641268b3f3168e3ef8a4,
+    type: 2}
 --- !u!1 &837218790
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +812,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1497700410
+  randomSeed: -754906887
   InitialModule:
     serializedVersion: 3
     enabled: 1
